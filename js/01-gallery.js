@@ -26,6 +26,7 @@ galleryEl.addEventListener("keydown", event => {
 
     if (isVisible && event.key === 'Escape') {
         modalEl.close();
+        galleryEl.removeEventListener("keydown", event);
     };
 });
 });
